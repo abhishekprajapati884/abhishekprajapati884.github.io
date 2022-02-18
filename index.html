@@ -3,32 +3,226 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/assignment style.css">
-    <title>Module 2 Assignment</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Daredevil</title>
 </head>
 
 <body>
-    <h1>Assignment</h1>
-    <div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <section id="box1">
-                <h3>Abhishek Prajapati</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, incidunt explicabo odio aliquam quaerat sit adipisci exercitationem quae debitis quo dolores quidem. Aperiam ipsa cumque maiores incidunt repellendus porro ullam.</p>
-            </section>
+    <nav class="navbar background backof h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="images/logo.jpg" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cast">Cast</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Services</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="Search..">
+            <button class="btn btn-sm btn-main" onclick="search();">Search</button>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <section id="box2">
-                <h3>Module</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, incidunt explicabo odio aliquam quaerat sit adipisci exercitationem quae debitis quo dolores quidem. Aperiam ipsa cumque maiores incidunt repellendus porro ullam.</p>
-            </section>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12">
-            <section id="box3">
-                <h3>2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, incidunt explicabo odio aliquam quaerat sit adipisci exercitationem quae debitis quo dolores quidem. Aperiam ipsa cumque maiores incidunt repellendus porro ullam.</p>
-            </section>
-        </div>
+    </nav>
+    <div onclick="removehl();">
+        <section class="backgrounds firstSection" id="home">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <p class="text-big" id="paragraph1">
+                        Daredevil
+                    </p>
+                    <p class="text-small" id="paragraph2">
+                        Matt Murdock manages to overcome the challenges that he faces due to him being blind since
+                        childhood
+                        and fights criminals as a lawyer and Daredevil.
+                    </p>
+                    <div class="firsthalfbtn">
+                        <button class="btn btn-main btnfh" onclick="seasons();">
+                            Seasons
+                        </button>
+                        <em class="mainfh"></em>
+                        <button class="btn btn-main btnfh" onclick="episodes();">
+                            Episodes
+                        </button>
+                    </div>
+                </div>
+                <div class="secondHalf">
+                    <img src="images/charlie cox.jpg" alt="Matt" class="charlie">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section" id="cast">
+            <div class="paras">
+                <p class="sectionTag text-big" id="paragraph3">Charlie Cox as Matt Murdock / Daredevil</p>
+                <p class="sectionSubTag text-small" id="paragraph4">A blind lawyer who leads a double life as the
+                    vigilante Daredevil.
+                    Season
+                    one showrunner Steven DeKnight explained that Murdock is "not super strong. He's not invulnerable...
+                    he
+                    just
+                    has senses that are better than a normal human's." On the character's "grey" morals, he noted, "He's
+                    a
+                    lawyer by day, and he's taken this oath. But every night he breaks that oath, and goes out and does
+                    very
+                    violent things." The character's Catholicism plays a large role in the series, with DeKnight calling
+                    him
+                    "one of the most, if not the most, religious characters in the Marvel Universe". Cox worked with
+                    blind
+                    consultant Joe Strechay, and was conscious of what his eyes were doing at all times, to ensure they
+                    would
+                    not look at or react to something unlike a blind person. Skylar Gaertner plays a young Matt Murdock.
+                </p>
+            </div>
+            <div class="thumbnail">
+                <img src="images/cc.jpg" alt="picture" class="imgFluid">
+            </div>
+
+        </section>
+        <br>
+        <hr>
+        <section class="section section-Left">
+            <div class="paras">
+                <p class="sectionTag text-big" id="paragraph5">Deborah Ann Woll as Karen Page</p>
+                <p class="sectionSubTag text-small" id="paragraph6">An enigmatic young woman whose quest for justice
+                    sends her crashing into
+                    Murdock's life. After portraying Jessica Hamby in True Blood from 2008 to 2014, Woll specifically
+                    tried
+                    to
+                    "steer differently than that" with Page. Woll noted that Page's backstory would be different from
+                    the
+                    one
+                    from the comics, saying, "In the comic books, in the beginning Karen is very innocent, and then
+                    towards
+                    the
+                    end she's really swung a full 180, she's in a lot of trouble, so I wanted to find a way to make her
+                    both
+                    of
+                    those things at the same time. Can she be a really wonderful, kind person who is a little bit
+                    attracted
+                    to
+                    danger? She's not just always getting into trouble because 'Oh, silly woman!' Karen is actually
+                    looking
+                    for
+                    it, and she won't let her fear stop her from finding the truth."
+                </p>
+            </div>
+            <div class="thumbnail">
+                <img src="images/deborah.jpg" alt="picture" class="imgFluid">
+            </div>
+
+        </section>
+        <br>
+        <hr>
+        <section class="section">
+            <div class="paras">
+                <p class="sectionTag text-big" id="paragraph7">Elden Henson as Frabklin "Foggy" Nelson</p>
+                <p class="sectionSubTag text-small" id="paragraph8">Murdock's best friend and law partner. In April
+                    2015, Henson spoke of
+                    his
+                    excitement for the character's role in the series, saying "I was really excited as I was getting the
+                    scripts
+                    and reading that Foggy wasn't just a useless sidekick. He's not just comic relief. I mean, he is
+                    some of
+                    those things. He does have comic relief, but it was exciting to know that these other characters
+                    would
+                    have
+                    their own path and their own things that they're dealing with."
+                </p>
+            </div>
+            <div class="thumbnail">
+                <img src="images/elden.jpg" alt="picture" class="imgFluid">
+            </div>
+
+        </section>
+        <br>
+        <hr>
+        <section class="section section-Left">
+            <div class="paras">
+                <p class="sectionTag text-big" id="paragraph9">Vincent D'Onofrio as Wilson Fisk</p>
+                <p class="sectionSubTag text-small" id="paragraph10">A powerful businessman and crime lord whose
+                    interests in the future of
+                    Hell's Kitchen brings him into conflict with Murdock and Daredevil. D'Onofrio stated that he hoped
+                    his
+                    portrayal of Fisk was a new way to look at the character, and that it would be the definitive
+                    portrayal
+                    of Fisk. DeKnight detailed that "Fisk has very many different aspects so it's not all, "I want to
+                    conquer the city and make a lot of money". In our story, we tell the story of how he met his wife
+                    Vanessa and how they fell in love". He also said that "if you're looking for a juicy, multi-faceted
+                    crime drama, Wilson Fisk was the obvious choice to play the antagonist ... [he] really felt like the
+                    right yin to the yang for Matt, and for what we wanted to do this season." Cole Jensen plays a young
+                    Wilson Fisk.
+                </p>
+            </div>
+            <div class="thumbnail" >
+                <img src="images/vincent.jpg" alt="picture" class="imgFluid">
+            </div>
+            <em id="about"></em>
+
+        </section>
+        <br>
+        <hr>
+        <section class="aboutd" >
+            <h1 class="abouth">About the Show</h1>
+            <br>
+            <div class="aboutfirst">
+                <p class="paragraph13">
+                    Daredevil's origin is revealed in the comic's first issue. Bookish Matt Murdock pushes a man clear of an oncoming truck but is blinded when he lands in an unknown radioactive substance. Matt is the son of boxer “Battling” Jack Murdock, who is attempting to rebuild his career with the help of a crooked promoter known as the Fixer. While attending law school, Matt engages in an intense physical training regimen, aided by heightened senses that were triggered by the accident that took his sight. When his father is killed after refusing to throw a fight, Matt dons a costume and becomes Daredevil, vowing to bring his father's killers to justice. Upon being confronted by Daredevil, the Fixer promptly dies of a heart attack, so establishing the terrifying effect the hero has on criminals.
+                </p>
+                <br>
+            </div>
+            <div class="aboutsec">
+                <p class="paragraph14">
+                    By day, Murdock aids needy clients with his law practice. By night, he takes to the streets in the New York neighbourhood Hell's Kitchen to combat injustice directly. In addition to his elevated senses and martial prowess, Daredevil's crime-fighting arsenal includes a cane that contains a grappling hook and cable for scaling walls.
+                </p>
+                <br>
+            </div>
+            <div class="aboutthird">
+                <p class="paragraph15">
+                    Daredevil no. 1 also established the strip's supporting cast: Murdock's partner in his law firm, Franklin (“Foggy”) Nelson, and their secretary Karen Page. Over the following decade, Lee and other writers built up a formidable and bizarre rogues' gallery for Daredevil, including the Owl, Mr. Fear, and Stiltman. Much like Spider-Man and his alter ego Peter Parker, Daredevil is a fast-talking joker while Murdock is tortured and morose.
+                </p>
+                <em id="contact"></em>
+                <br>
+            </div>
+        </section>
+        
+        <br>
+        <hr>
+
+        <section class="contact" >
+            <h1 class="text-center">Contact Us</h1>
+            <div class="form">
+                <form name="contactform" action="">
+                    <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+                <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email">
+                <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                    placeholder="Elaborate your Concern"></textarea>
+                <p class="watching" id="paragraph11">Did you enjoyed watching this series: <br><input type="radio"
+                        name="yesno" value="Yes" id="Yes">Yes
+                    <input type="radio" name="yesno" value="No" id="No">No
+                </p>
+                <button class="btn btn-dark submit" onclick="fn();">Submit</button>
+                </form>
+                
+            </div>
+        </section>
+        <footer class="backof">
+            <p class="text-footer" id="paragraph12">
+                Copyright &copy; Abhishek Prajapati - All rights reserved
+            </p>
+
+        </footer>
+        <script src="js/r.js"></script>
+        <script src="js/highlight.js"></script>
     </div>
+
 </body>
 
 </html>
